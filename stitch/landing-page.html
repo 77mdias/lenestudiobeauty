@@ -1,0 +1,1999 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Lene Studio Beauty | Alta Estética &amp; Bem-Estar</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#eae8e6",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#ffaede",
+              "on-secondary-fixed": "#3b002d",
+              "on-primary-fixed-variant": "#70343e",
+              "surface-tint": "#8c4b55",
+              "surface-variant": "#e5e2e0",
+              "on-secondary-fixed-variant": "#712e5b",
+              "secondary-container": "#fda6da",
+              "tertiary-fixed": "#ffe088",
+              "on-primary": "#ffffff",
+              background: "#fcf9f7",
+              "on-tertiary-fixed-variant": "#574500",
+              "on-tertiary-fixed": "#241a00",
+              "on-background": "#1b1c1b",
+              "surface-container-highest": "#e5e2e0",
+              "error-container": "#ffdad6",
+              "inverse-surface": "#30302f",
+              "on-primary-container": "#fffbff",
+              "surface-dim": "#dcd9d8",
+              "secondary-fixed": "#ffd8ec",
+              "on-surface": "#1b1c1b",
+              "tertiary-fixed-dim": "#e9c349",
+              "inverse-primary": "#ffb2bc",
+              "on-primary-fixed": "#3a0915",
+              "primary-container": "#a6606b",
+              "on-surface-variant": "#524345",
+              "on-secondary-container": "#7b3664",
+              "surface-container": "#f0edeb",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              primary: "#8a4853",
+              tertiary: "#735c00",
+              "primary-fixed": "#ffd9dd",
+              error: "#ba1a1a",
+              "inverse-on-surface": "#f3f0ee",
+              "surface-bright": "#fcf9f7",
+              "surface-container-low": "#f6f3f1",
+              "primary-fixed-dim": "#ffb2bc",
+              "outline-variant": "#d7c1c3",
+              "tertiary-container": "#cba72f",
+              surface: "#fcf9f7",
+              "on-tertiary-container": "#4e3d00",
+              outline: "#857374",
+              secondary: "#8d4574",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              margin: "3rem",
+              gutter: "1.5rem",
+              "margin-mobile": "1.25rem",
+              "space-xs": "0.375rem",
+              "space-lg": "2rem",
+              "space-md": "1.25rem",
+              "space-xl": "3.5rem",
+              "space-sm": "0.75rem",
+              "gutter-mobile": "1rem",
+            },
+            fontFamily: {
+              "headline-md": ["Playfair Display"],
+              "label-lg": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              display: ["Playfair Display"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "headline-lg": ["Playfair Display"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "headline-sm": ["Playfair Display"],
+              "headline-lg-mobile": ["Playfair Display"],
+              "body-md": ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "display-mobile": ["Playfair Display"],
+            },
+            fontSize: {
+              "headline-md": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "500" },
+              ],
+              "label-lg": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.12em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "56px",
+                {
+                  lineHeight: "64px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": ["17px", { lineHeight: "28px", fontWeight: "400" }],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+              "headline-sm": [
+                "22px",
+                { lineHeight: "30px", fontWeight: "600" },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+              "title-md": ["18px", { lineHeight: "26px", fontWeight: "600" }],
+              "display-mobile": [
+                "38px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-3 shrink-0">
+          <img
+            alt="logo-transparent.png"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1XYMZaX4lUaUoDx9X04kkFomT-a47pD0WdqaobReHq2UEkhrx81zVCMwVTC4yaJ0JzQMBjIv5A1KXR5dK5IqCg0KJc-8j5jCR8Z6lpyDCgsUuG5vRAnXi0VRG22M_6LcHVutE30Tj4V6FS0wGLGT_PsZYwgz-coJySjWno8_jxqyH9VPCsS6KzmouxN2nf2CR_MSU-UzK_7oRfRWEADPoG2Rjl0FlY0ZNFgbYPMH_wK2yMI18THT6fWcGw1FytzFlmNwGM6p5f4bQ"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm text-primary tracking-tight"
+              >Lene Studio Beauty</span
+            ><span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-outline"
+              >Haute Coiffure &amp; Esthétique</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden xl:flex items-center gap-6"
+          data-active-classes="text-primary font-bold"
+        >
+          <a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="inicio"
+            href="#"
+            >Início</a
+          ><a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="servicos"
+            href="#"
+            >Serviços</a
+          ><a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="transformacoes-galeria"
+            href="#"
+            >Transformações &amp; Galeria</a
+          ><a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="antes-e-depois"
+            href="#"
+            >Antes e Depois</a
+          ><a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="depoimentos"
+            href="#"
+            >Depoimentos</a
+          ><a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="sobre-marlene-dias"
+            href="#"
+            >Sobre Marlene Dias</a
+          ><a
+            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200"
+            data-path="contato-agendamento"
+            href="#"
+            >Contato / Agendamento</a
+          >
+        </nav>
+        <div class="flex items-center gap-4 shrink-0">
+          <a
+            class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all duration-200"
+            data-path="contato-agendamento"
+            href="#"
+            ><span class="material-symbols-outlined text-[18px]">chat</span
+            ><span>Agendar via WhatsApp</span></a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION -->
+        <section
+          class="relative w-full overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface py-16 lg:py-24"
+        >
+          <!-- Decorative Ambient Glows -->
+          <div
+            class="absolute -top-32 right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 left-0 w-80 h-80 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"
+          ></div>
+          <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center"
+            >
+              <!-- Hero Text -->
+              <div class="lg:col-span-7 flex flex-col gap-6">
+                <div
+                  class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container shadow-sm max-w-fit"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >verified</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-semibold"
+                    >Haute Coiffure &amp; Estética Avançada</span
+                  >
+                </div>
+                <h1
+                  class="font-display text-display text-on-surface tracking-tight leading-none"
+                >
+                  Sua melhor versão começa aqui. Realce a beleza e o poder dos
+                  seus cabelos.
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed"
+                >
+                  Especialista em mechas personalizadas, alinhamentos de alta
+                  durabilidade, cronograma capilar de alta performance e
+                  penteados que transformam a sua autoestima com elegância e
+                  sofisticação.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2"
+                >
+                  <a
+                    class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-xl shadow-primary/25 hover:bg-primary-container hover:scale-[1.02] transition-all duration-300"
+                    href="#agendamento"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >chat</span
+                    >
+                    <span>Agendar Horário no WhatsApp</span>
+                  </a>
+                  <a
+                    class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all duration-200"
+                    href="#servicos"
+                  >
+                    <span>Conhecer Nossos Serviços</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t-0">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-md text-headline-md text-primary font-bold"
+                      >15+</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Anos de Maestria Capilar</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-md text-headline-md text-primary font-bold"
+                      >3.5k+</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Cabelos Transformados</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-md text-headline-md text-tertiary font-bold"
+                      >5.0 ★</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Avaliações das Clientes</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Hero Visual Showcase -->
+              <div class="lg:col-span-5 relative flex justify-center">
+                <div class="relative w-full max-w-md">
+                  <!-- Background Rosé Accent Layer -->
+                  <div
+                    class="absolute inset-0 translate-x-4 translate-y-4 rounded-2xl bg-secondary-fixed/50 -rotate-2"
+                  ></div>
+                  <!-- Main High Impact Showcase Photo -->
+                  <div
+                    class="relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-2xl p-2.5"
+                  >
+                    <img
+                      alt="Transformação Lene Studio Beauty - Marlene Dias"
+                      class="w-full h-[520px] object-cover object-center rounded-xl"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7531ndXBV1ue2dv7T7uU_5zWg9DcGfrbYxXlPcT0Xic0zmYeurnbVr8sJJI5SlLJAPSTGDEDfNizcZ7gSPFdUcFLZ7rDP8ydtsvoZBTqMhbXSdW1ToKEdj4BZYuNlnkh2fpGmc2-YOcZaptOxKoHy39C7G3dbJeDE8eHriM06LeXIriFw9LZClyPnzZh46Z_DgqxRQWzsHMvw89R29xbEp4E7ZUMe343XjmS2US4huLatnBSJvX1HpKnlI3na77GV7Q"
+                    />
+                    <!-- Floating Badge: Experience -->
+                    <div
+                      class="absolute top-6 left-6 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-2.5"
+                    >
+                      <span
+                        class="material-symbols-outlined text-tertiary text-[20px]"
+                        >workspace_premium</span
+                      >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold"
+                          >+15 Anos de Excelência</span
+                        >
+                        <span
+                          class="font-body-sm text-[11px] text-on-surface-variant"
+                          >Técnicas exclusivas</span
+                        >
+                      </div>
+                    </div>
+                    <!-- Floating Badge: Exclusive VIP -->
+                    <div
+                      class="absolute bottom-6 right-6 bg-surface-container-lowest/95 backdrop-blur-md px-4 py-3 rounded-xl shadow-xl flex items-center gap-3"
+                    >
+                      <div
+                        class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"
+                      ></div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm font-semibold text-on-surface"
+                          >Atendimento Exclusivo</span
+                        >
+                        <span class="font-body-sm text-[11px] text-primary"
+                          >Hora marcada individual</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- STATS & PILLARS BAR -->
+        <section
+          class="w-full bg-surface-container-lowest py-10 shadow-sm relative"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x-0">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[24px]"
+                    >auto_awesome</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="font-title-md text-title-md text-on-surface block font-bold"
+                    >+3.500 Cabelos</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >Transformações com saúde capilar</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-tertiary-fixed/30 flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-tertiary text-[24px]"
+                    >diamond</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="font-title-md text-title-md text-on-surface block font-bold"
+                    >100% Premium</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >Cosméticos nobres &amp; bioativos</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary-fixed/50 flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[24px]"
+                    >schedule</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="font-title-md text-title-md text-on-surface block font-bold"
+                    >Atendimento VIP</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >Privacidade &amp; pontualidade total</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[24px]"
+                    >face_retouching_natural</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="font-title-md text-title-md text-on-surface block font-bold"
+                    >Visagismo Real</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >Harmonia com seu estilo e tom</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SERVICES SECTION -->
+        <section class="w-full py-24 bg-surface relative" id="servicos">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <!-- Section Header -->
+            <div
+              class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16"
+            >
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold mb-2"
+                >Menu de Especialidades</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface mb-4"
+              >
+                Procedimentos de Alta Estética Capilar
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Cada técnica é adaptada meticulosamente às necessidades da sua
+                fibra capilar, priorizando a vitalidade, integridade e
+                sofisticação visual.
+              </p>
+            </div>
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Service 1: Mechas & Morena Iluminada -->
+              <div
+                class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="h-52 w-full rounded-xl overflow-hidden relative">
+                    <img
+                      alt="Mechas e Morena Iluminada"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh_-ncj1Tg5CKnQBRzKtiXbQxAdd_VH8qhJ3kN5I-9MXBR3MxphFJxGyO-JFk-xz4t_g3HU4fQBNQRb6IA5UXHvmrw9O3ct_Cf4yPYPOcSRopzqP5RlJ_ANI4NiZhL_SRI4t5QK80YiQrLmDsF91iyN2TlJuXe9_UqZRngxAUXgUthZkQZkGv22vR90yHHetSZRy7aro3ClX0TREwWcf7ICHl0t_koq5RvMJWuIgytYOOfyinP_G68Qpxj9XkQe1wkFA"
+                    />
+                    <div
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold"
+                    >
+                      Destaque Estúdio
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold"
+                      >Clareamento Seguro</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >3h30 - 4h30</span
+                    >
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    Mechas &amp; Morena Iluminada
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Técnicas personalizadas de contraste, babylights e contorno
+                    facial. Preservação total da integridade elástica dos fios
+                    com tratamento pré e pós-descoloração.
+                  </p>
+                </div>
+                <div class="pt-6 mt-4">
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container text-primary font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors duration-200"
+                    href="#agendamento"
+                  >
+                    <span>Quero Agendar</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >calendar_month</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Service 2: Liso Espelhado & Selagem Orgânica -->
+              <div
+                class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="h-52 w-full rounded-xl overflow-hidden relative">
+                    <img
+                      alt="Liso Espelhado e Selagem Orgânica"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDZ9uuFPwkCOyBxWc0fQ0PxXpQTIH5NlfutlgrrqYbt-pCL_mcCnLm4HQVNK0B9LmA7vf7K0pqeIauX_U_eh4DzUO4kJFBHq4jyg0lbc3QeiSZOcP6bVFp6oWRKQ8wyvzcw-xotgPoGh_dah0OM1iB9UNScIXUBNtquDsKLOm2K69ixry0LvC48rHxJRPSf08Gw6hLPxwecmUFAg8fvSKTSOXlu0_w-HMFJrw6JtPy3lxfl_JUr5NXxo6gUGZbF2lR5A"
+                    />
+                    <div
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold"
+                    >
+                      Zero Formol
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold"
+                      >Alinhamento Térmico</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >2h30 - 3h30</span
+                    >
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    Liso Espelhado &amp; Selagem
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Tratamento orgânico enriquecido com aminoácidos vegetais e
+                    óleos nobres. Proporciona caimento natural sedoso,
+                    eliminação de frizz e brilho tridimensional incomparável.
+                  </p>
+                </div>
+                <div class="pt-6 mt-4">
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container text-primary font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors duration-200"
+                    href="#agendamento"
+                  >
+                    <span>Quero Agendar</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >calendar_month</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Service 3: Penteados & Produção de Noivas -->
+              <div
+                class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="h-52 w-full rounded-xl overflow-hidden relative">
+                    <img
+                      alt="Penteados para Noivas e Eventos"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw92iKW3M1Pmxtzpgz89CB7ftSWpZmEsSrMg2AHCu6NdvCGs6qmTDhby2Cg54N1fmWBU65Bl7_Mj58BxH2h0PIv3WIVg5HI0dTeRr7tXT_xe2enV_uygB2PnLFsqD-fMVdUq9nUPRKAdGRMOpuxWcHvc7_GTiUaUEfZ7pfm_V2pNor1lWdUno0OJGfVs2yj6K8neq9d56uLEeeX8-4gosIYsMzljMFaDRsWladpZtb9BAX_tI-v5F0uPEF8zOIbX5T6Q"
+                    />
+                    <div
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-tertiary font-label-sm text-label-sm font-semibold"
+                    >
+                      Noivas &amp; Madrinhas
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold"
+                      >Eventos &amp; Galas</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >1h30 - 2h30</span
+                    >
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    Penteados &amp; Produções
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Design de penteados elegantes, coques refinados, tranças
+                    desconstruídas e ondas de cinema com fixação impecável de
+                    longa duração para noivas, debutantes e formandas.
+                  </p>
+                </div>
+                <div class="pt-6 mt-4">
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container text-primary font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors duration-200"
+                    href="#agendamento"
+                  >
+                    <span>Quero Agendar</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >calendar_month</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Service 4: Cronograma & Terapia Capilar -->
+              <div
+                class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="h-52 w-full rounded-xl overflow-hidden relative">
+                    <img
+                      alt="Cronograma e Terapia Capilar"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE8P1B8Xgn0KxWWOVX_QkvtdYN7VBN5zFLW9anH16DqL9Bb-41Lqy2huzX-r1jA6iB2hJIqH6IyYKgFkRcsbAZb38x1YMuiShOZAvEnhCAj2TDw4CdUWIIjaNegyjuBSE1S9O93NJcN8jG_1vF8Dxp0bkngP6w0Rg0ug1t676bdSYjfZnw2swcuY79iRN2_wexW3Q0LPmMzTH3DXnaRT4C4F6SIZdraJpBi13S1MGCLNJ9OMHXCXALtRe4yY7dIxOFjA"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold"
+                      >Regeneração Profunda</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >1h30</span
+                    >
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    Cronograma &amp; Terapia Capilar
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Tratamento intensivo de reposição lipídica, reconstrução
+                    proteica e hidratação molecular. Reverte o ressecamento e
+                    devolve a densidade e elasticidade original da fibra.
+                  </p>
+                </div>
+                <div class="pt-6 mt-4">
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container text-primary font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors duration-200"
+                    href="#agendamento"
+                  >
+                    <span>Quero Agendar</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >calendar_month</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Service 5: Cortes Visagistas Modernos -->
+              <div
+                class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="h-52 w-full rounded-xl overflow-hidden relative">
+                    <img
+                      alt="Cortes Visagistas Modernos"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB34B8ua4Ayy7gtlNLOHdLlml-eMHj-XUyIcT7yy7gaGVr1PemanG7JN2Aj42fbpz3O6eyPVFl0-pm6iILlGnbutqOGvOW1MCtqLzu_qTjp_qvCGwtS6kSTiYTGn4SERW9-MCjeZSq3rO2DZ-NISHmaDDZMSfcXvF5vov5_qTDJ1akA8XVNGDM3UebTqQlDrt50rR16hMv3BryfKKXOzlzPnbviqsG9mnwOo0m9SQl2kRIujMR16J7ww9NR1IUZvGW6hA"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold"
+                      >Design &amp; Geometria</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >1h00</span
+                    >
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    Cortes Visagistas Modernos
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Chanel de bico impecável, long bobs descontraídos, camadas
+                    para movimento ou corte em V desenhado. Escultura
+                    personalizada de acordo com a geometria do seu rosto.
+                  </p>
+                </div>
+                <div class="pt-6 mt-4">
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container text-primary font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors duration-200"
+                    href="#agendamento"
+                  >
+                    <span>Quero Agendar</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >calendar_month</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Service 6: Tonalização & Banho de Brilho -->
+              <div
+                class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="h-52 w-full rounded-xl overflow-hidden relative">
+                    <img
+                      alt="Tonalização e Banho de Brilho"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL34epHyAue6psAFRpO0FUW6gnQU8Db8ppNizWbai8I86AVUqJnju0w78lxRj_R4K2rbGI1FycCGTT3otCjSV__Zclwx6xq4StxSNJFWZDPKcnFP7wW31UsjYTnh11JGMPij4brGKFjalCr0IL3Qg0zD9m3np_le-MYueq693bp1lXgCMah4OUKL9comWLoWuUtDFzjQcuQXINtEEWpAbj4EvcGpvk4Xp58kH-UQVmZhh2Om1AnLv3RmozZNV0NtFNdQ"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold"
+                      >Cor &amp; Luminosidade</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >1h30</span
+                    >
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    Tonalização &amp; Gloss Intenso
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Matização precisa para loiros e morenas sem agredir,
+                    neutralizando tons indesejados e selando as cutículas com
+                    camada vítrea de brilho intenso e duradouro.
+                  </p>
+                </div>
+                <div class="pt-6 mt-4">
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container text-primary font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors duration-200"
+                    href="#agendamento"
+                  >
+                    <span>Quero Agendar</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >calendar_month</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BEFORE & AFTER TRANSFORMATION SHOWCASE -->
+        <section
+          class="w-full py-24 bg-surface-container-low relative overflow-hidden"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div
+              class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16"
+            >
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container max-w-fit mb-3"
+              >
+                <span class="material-symbols-outlined text-primary text-[16px]"
+                  >compare</span
+                >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-semibold"
+                  >Resultados Reais &amp; Comprovados</span
+                >
+              </div>
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface mb-3"
+              >
+                Antes &amp; Depois no Lene Studio Beauty
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Veja a metamorfose: fios revitalizados, alinhamento absoluto e
+                técnicas que valorizam a beleza singular de cada cliente.
+              </p>
+            </div>
+            <!-- Comparative Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Transformation Card 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md flex flex-col"
+              >
+                <div
+                  class="p-4 bg-surface-container flex items-center justify-between"
+                >
+                  <span
+                    class="font-title-md text-title-md text-primary font-bold"
+                    >Alinhamento &amp; Brilho Espelho</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant font-semibold"
+                    >Caso #01</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-1 p-2 bg-surface-container-low"
+                >
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      alt="Antes da Transformação"
+                      class="w-full h-80 object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx7AgMminNs8nEE2fpm4aGD8x9Zifqfz4cG8VtdagcEHYDyjCa3SyOqFG8jMR7W0opKGIAQIwq5AdKjgYAbP_QDg_5S7w06rPJf4RlPTEAEMEFX7IJk4bZ3TRQFH9YJjkGIcU6ZbWTYYlGQmYKvkPR0wJhuzo_DnfBDAHOQBC2YLbunn6NgWVVSRs1ghGHOy3Zz_4346tkXtitrGlzg3-rGRyCIqgozHWyvfa13SA3IwhqeDfFSKNvuUyuRS8C3ChpUg"
+                    />
+                    <span
+                      class="absolute top-3 left-3 bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider"
+                      >Antes</span
+                    >
+                  </div>
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      alt="Depois da Transformação Liso Perfeito"
+                      class="w-full h-80 object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7531ndXBV1ue2dv7T7uU_5zWg9DcGfrbYxXlPcT0Xic0zmYeurnbVr8sJJI5SlLJAPSTGDEDfNizcZ7gSPFdUcFLZ7rDP8ydtsvoZBTqMhbXSdW1ToKEdj4BZYuNlnkh2fpGmc2-YOcZaptOxKoHy39C7G3dbJeDE8eHriM06LeXIriFw9LZClyPnzZh46Z_DgqxRQWzsHMvw89R29xbEp4E7ZUMe343XjmS2US4huLatnBSJvX1HpKnlI3na77GV7Q"
+                    />
+                    <span
+                      class="absolute top-3 right-3 bg-primary text-on-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider font-bold"
+                      >Depois</span
+                    >
+                  </div>
+                </div>
+                <div class="p-5 flex flex-col gap-2">
+                  <h4 class="font-headline-sm text-[18px] text-on-surface">
+                    Selagem Térmica Orgânica
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Fios com opacidade e frizz transformados em um liso com
+                    movimento orgânico e luminosidade tridimensional.
+                  </p>
+                </div>
+              </div>
+              <!-- Transformation Card 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md flex flex-col"
+              >
+                <div
+                  class="p-4 bg-surface-container flex items-center justify-between"
+                >
+                  <span
+                    class="font-title-md text-title-md text-primary font-bold"
+                    >Corte Visagista &amp; Geometria</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant font-semibold"
+                    >Caso #02</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-1 p-2 bg-surface-container-low"
+                >
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      alt="Antes - Corte e Alinhamento"
+                      class="w-full h-80 object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB34B8ua4Ayy7gtlNLOHdLlml-eMHj-XUyIcT7yy7gaGVr1PemanG7JN2Aj42fbpz3O6eyPVFl0-pm6iILlGnbutqOGvOW1MCtqLzu_qTjp_qvCGwtS6kSTiYTGn4SERW9-MCjeZSq3rO2DZ-NISHmaDDZMSfcXvF5vov5_qTDJ1akA8XVNGDM3UebTqQlDrt50rR16hMv3BryfKKXOzlzPnbviqsG9mnwOo0m9SQl2kRIujMR16J7ww9NR1IUZvGW6hA"
+                    />
+                    <span
+                      class="absolute top-3 left-3 bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider"
+                      >Antes</span
+                    >
+                  </div>
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      alt="Depois - Chanel Alinhado"
+                      class="w-full h-80 object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDZ9uuFPwkCOyBxWc0fQ0PxXpQTIH5NlfutlgrrqYbt-pCL_mcCnLm4HQVNK0B9LmA7vf7K0pqeIauX_U_eh4DzUO4kJFBHq4jyg0lbc3QeiSZOcP6bVFp6oWRKQ8wyvzcw-xotgPoGh_dah0OM1iB9UNScIXUBNtquDsKLOm2K69ixry0LvC48rHxJRPSf08Gw6hLPxwecmUFAg8fvSKTSOXlu0_w-HMFJrw6JtPy3lxfl_JUr5NXxo6gUGZbF2lR5A"
+                    />
+                    <span
+                      class="absolute top-3 right-3 bg-primary text-on-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider font-bold"
+                      >Depois</span
+                    >
+                  </div>
+                </div>
+                <div class="p-5 flex flex-col gap-2">
+                  <h4 class="font-headline-sm text-[18px] text-on-surface">
+                    Chanel de Bico &amp; Nutrição Selante
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Redefinição completa de volume e peso das pontas, criando
+                    uma silhueta elegante, moderna e fácil de estilizar em casa.
+                  </p>
+                </div>
+              </div>
+              <!-- Transformation Card 3 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md flex flex-col"
+              >
+                <div
+                  class="p-4 bg-surface-container flex items-center justify-between"
+                >
+                  <span
+                    class="font-title-md text-title-md text-primary font-bold"
+                    >Produção Social &amp; Noivas</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant font-semibold"
+                    >Caso #03</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-1 p-2 bg-surface-container-low"
+                >
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      alt="Antes - Fios sem estrutura de festa"
+                      class="w-full h-80 object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBII-gmg5cVmlsBP1FhImC_n0FfQkwr7xSKMvQbT7QlkQm3NCY04xvXu9lRgiHlu8XK67afyVwAzh1rgU8WP2F1SWfLJJi0fYuJjLuiMiAgULakU2TFJ1MQUoOJvBUURZYi1Gxlf8_m2ISgLae6nrlQjf7dD1mcKvALhi5h0M6t_NMiV8-ywdeQgDcRGYwDsCmOHZI-e3FktdxC70IjipeS0r71MjIQidEvIKmwiZBhFgbROACjCB2v51U5Nc0jITGTxg"
+                    />
+                    <span
+                      class="absolute top-3 left-3 bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider"
+                      >Base</span
+                    >
+                  </div>
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      alt="Penteado Finalizado"
+                      class="w-full h-80 object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw92iKW3M1Pmxtzpgz89CB7ftSWpZmEsSrMg2AHCu6NdvCGs6qmTDhby2Cg54N1fmWBU65Bl7_Mj58BxH2h0PIv3WIVg5HI0dTeRr7tXT_xe2enV_uygB2PnLFsqD-fMVdUq9nUPRKAdGRMOpuxWcHvc7_GTiUaUEfZ7pfm_V2pNor1lWdUno0OJGfVs2yj6K8neq9d56uLEeeX8-4gosIYsMzljMFaDRsWladpZtb9BAX_tI-v5F0uPEF8zOIbX5T6Q"
+                    />
+                    <span
+                      class="absolute top-3 right-3 bg-primary text-on-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider font-bold"
+                      >Produção</span
+                    >
+                  </div>
+                </div>
+                <div class="p-5 flex flex-col gap-2">
+                  <h4 class="font-headline-sm text-[18px] text-on-surface">
+                    Penteado Glamour de Casamento
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Estruturação personalizada com ondas texturizadas e fixação
+                    impecável para momentos inesquecíveis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- EDITORIAL REAL GALLERY / FEED -->
+        <section class="w-full py-24 bg-surface" id="galeria">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6"
+            >
+              <div>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold block mb-2"
+                  >Galeria de Clientes &amp; Arte</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Feed do Ateliê: A Arte em Cada Mecha
+                </h2>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg"
+                href="https://instagram.com"
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >photo_camera</span
+                >
+                <span>Siga @lenestudiobeauty</span>
+              </a>
+            </div>
+            <!-- Bento-style Masonry Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <!-- Photo 1 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Cabelo longo espelhado liso perfeito"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7531ndXBV1ue2dv7T7uU_5zWg9DcGfrbYxXlPcT0Xic0zmYeurnbVr8sJJI5SlLJAPSTGDEDfNizcZ7gSPFdUcFLZ7rDP8ydtsvoZBTqMhbXSdW1ToKEdj4BZYuNlnkh2fpGmc2-YOcZaptOxKoHy39C7G3dbJeDE8eHriM06LeXIriFw9LZClyPnzZh46Z_DgqxRQWzsHMvw89R29xbEp4E7ZUMe343XjmS2US4huLatnBSJvX1HpKnlI3na77GV7Q"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Liso Espelhado Orgânico</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 2 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Corte em V com ondas e morena iluminada"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh_-ncj1Tg5CKnQBRzKtiXbQxAdd_VH8qhJ3kN5I-9MXBR3MxphFJxGyO-JFk-xz4t_g3HU4fQBNQRb6IA5UXHvmrw9O3ct_Cf4yPYPOcSRopzqP5RlJ_ANI4NiZhL_SRI4t5QK80YiQrLmDsF91iyN2TlJuXe9_UqZRngxAUXgUthZkQZkGv22vR90yHHetSZRy7aro3ClX0TREwWcf7ICHl0t_koq5RvMJWuIgytYOOfyinP_G68Qpxj9XkQe1wkFA"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Corte em Camadas &amp; Ondas</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 3 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Chanel de bico moderno ultra alinhado"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDZ9uuFPwkCOyBxWc0fQ0PxXpQTIH5NlfutlgrrqYbt-pCL_mcCnLm4HQVNK0B9LmA7vf7K0pqeIauX_U_eh4DzUO4kJFBHq4jyg0lbc3QeiSZOcP6bVFp6oWRKQ8wyvzcw-xotgPoGh_dah0OM1iB9UNScIXUBNtquDsKLOm2K69ixry0LvC48rHxJRPSf08Gw6hLPxwecmUFAg8fvSKTSOXlu0_w-HMFJrw6JtPy3lxfl_JUr5NXxo6gUGZbF2lR5A"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Chanel de Bico Impecável</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 4 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Cabelo castanho com ultra brilho na cadeira do salão"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE8P1B8Xgn0KxWWOVX_QkvtdYN7VBN5zFLW9anH16DqL9Bb-41Lqy2huzX-r1jA6iB2hJIqH6IyYKgFkRcsbAZb38x1YMuiShOZAvEnhCAj2TDw4CdUWIIjaNegyjuBSE1S9O93NJcN8jG_1vF8Dxp0bkngP6w0Rg0ug1t676bdSYjfZnw2swcuY79iRN2_wexW3Q0LPmMzTH3DXnaRT4C4F6SIZdraJpBi13S1MGCLNJ9OMHXCXALtRe4yY7dIxOFjA"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Cronograma Lipídico Reconstrutor</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 5 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Cabelo ruivo e acobreado com ondas"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL34epHyAue6psAFRpO0FUW6gnQU8Db8ppNizWbai8I86AVUqJnju0w78lxRj_R4K2rbGI1FycCGTT3otCjSV__Zclwx6xq4StxSNJFWZDPKcnFP7wW31UsjYTnh11JGMPij4brGKFjalCr0IL3Qg0zD9m3np_le-MYueq693bp1lXgCMah4OUKL9comWLoWuUtDFzjQcuQXINtEEWpAbj4EvcGpvk4Xp58kH-UQVmZhh2Om1AnLv3RmozZNV0NtFNdQ"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Morena Iluminada Avelã</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 6 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Corte Bob moderno loiro caramelo"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAndpVSTL_i8N-5KF_TAoFXu-U8xcEQ_vc0niMAGAbhMZPy7ZL3BvZLDz8LGwBLzABJRz7dbgHZyNdu6C-_AwyUwJ-BhpmKvLHC0jY-5QUKjU3DTbOVcuffpTfREKSiXLeGJxq2kVwbPeipCabZE0CWP1XsQBLX3Wthk59ULTONYWA4vwtXppAgvxBvGxG_mfq-pse35ERqiZFy7BzLIXDTR5H1OB3k8bHZgVWiCx-LhkUSTQzaD8qHcCn925koXKKSDg"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Blonde Bob &amp; Selagem</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 7 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Chanel clássico caramelo"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT2BQQE3jDHCDlSWf6iVApcSIil8YtodCE4pDVu2_aPgiIgZeQG1rPWUEEZM1DQg_ZwmjXzfCP06RfvqW1YGvqySQajAFuzhLWEdIz8Q-Z-gkLE03djpEz_UcariKwHheqGxrB42Hx2D0UAvnkIwTo7JMUAHknxzX-MWvx3rjjKwY5Zs_hBmQglFFGRpVwsdJZ_VPtg4nCYKkUeeDacnL8dAH8T3TBKK0m554ievBs0mDiW-QIu0UlFZR0RUNH6fpUEQ"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Bob Caramelo Warm</span
+                  >
+                </div>
+              </div>
+              <!-- Photo 8 -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container aspect-[3/4] shadow-sm"
+              >
+                <img
+                  alt="Loiro pérola com acabamento refinado"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBII-gmg5cVmlsBP1FhImC_n0FfQkwr7xSKMvQbT7QlkQm3NCY04xvXu9lRgiHlu8XK67afyVwAzh1rgU8WP2F1SWfLJJi0fYuJjLuiMiAgULakU2TFJ1MQUoOJvBUURZYi1Gxlf8_m2ISgLae6nrlQjf7dD1mcKvALhi5h0M6t_NMiV8-ywdeQgDcRGYwDsCmOHZI-e3FktdxC70IjipeS0r71MjIQidEvIKmwiZBhFgbROACjCB2v51U5Nc0jITGTxg"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                >
+                  <span class="text-white font-label-sm text-label-sm"
+                    >Blonde Pearl Glow</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT MARLENE DIAS SECTION -->
+        <section
+          class="w-full py-24 bg-surface-container-lowest relative overflow-hidden"
+          id="sobre"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <!-- Visual & Badges -->
+              <div class="lg:col-span-5 relative flex justify-center">
+                <div class="relative w-full max-w-sm">
+                  <div
+                    class="rounded-3xl overflow-hidden shadow-2xl bg-surface-container p-2"
+                  >
+                    <img
+                      alt="Marlene Dias Especialista em Beleza"
+                      class="w-full h-[480px] object-cover rounded-2xl"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw92iKW3M1Pmxtzpgz89CB7ftSWpZmEsSrMg2AHCu6NdvCGs6qmTDhby2Cg54N1fmWBU65Bl7_Mj58BxH2h0PIv3WIVg5HI0dTeRr7tXT_xe2enV_uygB2PnLFsqD-fMVdUq9nUPRKAdGRMOpuxWcHvc7_GTiUaUEfZ7pfm_V2pNor1lWdUno0OJGfVs2yj6K8neq9d56uLEeeX8-4gosIYsMzljMFaDRsWladpZtb9BAX_tI-v5F0uPEF8zOIbX5T6Q"
+                    />
+                  </div>
+                  <!-- Certified Badge Card -->
+                  <div
+                    class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-4 rounded-2xl shadow-xl max-w-xs flex items-center gap-3"
+                  >
+                    <div
+                      class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[24px]"
+                        >psychology</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-title-md text-[15px] font-bold text-on-surface"
+                        >Visagismo Aplicado</span
+                      >
+                      <span
+                        class="font-body-sm text-[12px] text-on-surface-variant"
+                        >Estudos e certificações constantes</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Text & Story -->
+              <div class="lg:col-span-7 flex flex-col gap-6">
+                <div
+                  class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container max-w-fit"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >favorite</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-semibold"
+                    >Conheça Marlene Dias</span
+                  >
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  "Amo o que faço. Cuidar de você e transformar sua autoestima é
+                  o nosso maior propósito."
+                </h2>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+                >
+                  Com mais de uma década e meia dedicada à arte da coiffure,
+                  Marlene Dias construiu o Lene Studio Beauty como um santuário
+                  de bem-estar e sofisticação. Sua abordagem une o rigor técnico
+                  de produtos importados de ponta ao carinho de um atendimento
+                  humanizado e exclusivo.
+                </p>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                >
+                  Aqui, você não é apenas mais um horário em uma agenda lotada.
+                  Cada mulher recebe um diagnóstico capilar pormenorizado,
+                  avaliação da saúde dos fios e um protocolo personalizado para
+                  garantir que o resultado seja deslumbrante e duradouro.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                  <div
+                    class="p-4 rounded-xl bg-surface-container flex items-start gap-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px] mt-0.5"
+                      >verified_user</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-lg text-label-lg font-bold text-on-surface"
+                        >Produtos Certificados</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Fórmulas orgânicas, sem formol e dermatologicamente
+                        testadas.</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-surface-container flex items-start gap-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px] mt-0.5"
+                      >spa</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-lg text-label-lg font-bold text-on-surface"
+                        >Experiência Relaxante</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Ambiente climatizado, café gourmet e atenção
+                        individual.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- TESTIMONIALS & REVIEWS -->
+        <section class="w-full py-24 bg-surface relative">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16"
+            >
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold mb-2"
+                >Opinião de Quem Confia</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface mb-3"
+              >
+                Histórias de Autoestima &amp; Cuidado
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                O carinho e a satisfação expressos por nossas clientes em cada
+                finalização e evento.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Testimonial 1 -->
+              <div
+                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-1 text-tertiary">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant italic"
+                  >
+                    "A Marlene é simplesmente fantástica! Fiz a selagem orgânica
+                    e o meu cabelo nunca teve tanto brilho e maciez. Não tem
+                    cheiro ruim nenhum e o resultado durou meses. Sou cliente
+                    fiel!"
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 pt-6 border-t-0 mt-6">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold"
+                  >
+                    MR
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-lg text-label-lg font-bold text-on-surface"
+                      >Márcia Regina</span
+                    >
+                    <span
+                      class="font-body-sm text-[12px] text-on-surface-variant"
+                      >Noiva &amp; Cliente VIP</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div
+                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-1 text-tertiary">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant italic"
+                  >
+                    "Meu loiro sempre quebrava em outros salões. Com a Marlene,
+                    ela primeiro fez uma reconstrução profunda e só depois as
+                    mechas. Meus cabelos ficaram íntegros e claríssimos!"
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 pt-6 border-t-0 mt-6">
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold"
+                  >
+                    CB
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-lg text-label-lg font-bold text-on-surface"
+                      >Carolina Bittencourt</span
+                    >
+                    <span
+                      class="font-body-sm text-[12px] text-on-surface-variant"
+                      >Mechas &amp; Terapia Capilar</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div
+                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-1 text-tertiary">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant italic"
+                  >
+                    "O atendimento com hora marcada faz toda a diferença. Não
+                    fico horas esperando, tenho café fresco e a Marlene dedica
+                    100% da atenção dela a mim. O corte visagista renovou meu
+                    rosto!"
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 pt-6 border-t-0 mt-6">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold"
+                  >
+                    FL
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-lg text-label-lg font-bold text-on-surface"
+                      >Fernanda Lins</span
+                    >
+                    <span
+                      class="font-body-sm text-[12px] text-on-surface-variant"
+                      >Corte Visagista &amp; Selagem</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BOOKING & CONTACT SECTION -->
+        <section
+          class="w-full py-24 bg-surface-container-low relative"
+          id="agendamento"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16"
+            >
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold mb-2"
+                >Agendamento &amp; Pré-Consulta</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface mb-3"
+              >
+                Garanta Seu Momento Exclusivo
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Preencha os dados abaixo para receber atendimento prioritário no
+                WhatsApp ou consulte nossas informações de contato direto.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              <!-- Interactive Booking Form -->
+              <div
+                class="lg:col-span-7 bg-surface-container-lowest p-8 lg:p-10 rounded-3xl shadow-lg"
+              >
+                <form
+                  class="flex flex-col gap-6"
+                  id="booking-form"
+                  onsubmit="
+                    event.preventDefault();
+                    handleBooking();
+                  "
+                >
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                      <label
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        for="client-name"
+                        >Nome Completo</label
+                      >
+                      <input
+                        class="w-full px-4 py-3.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/40 font-body-md text-body-md transition-all"
+                        id="client-name"
+                        placeholder="Seu nome completo"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <label
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        for="client-phone"
+                        >WhatsApp / Telefone</label
+                      >
+                      <input
+                        class="w-full px-4 py-3.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/40 font-body-md text-body-md transition-all"
+                        id="client-phone"
+                        placeholder="(11) 98765-4321"
+                        required=""
+                        type="tel"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                      <label
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        for="service-select"
+                        >Serviço de Interesse</label
+                      >
+                      <select
+                        class="w-full px-4 py-3.5 rounded-xl bg-surface-container text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 font-body-md text-body-md transition-all"
+                        id="service-select"
+                        required=""
+                      >
+                        <option value="">Selecione o procedimento</option>
+                        <option value="Mechas &amp; Morena Iluminada">
+                          Mechas &amp; Morena Iluminada
+                        </option>
+                        <option value="Liso Espelhado &amp; Selagem Orgânica">
+                          Liso Espelhado &amp; Selagem Orgânica
+                        </option>
+                        <option value="Penteados &amp; Produção de Noivas">
+                          Penteados &amp; Produção de Noivas
+                        </option>
+                        <option value="Cronograma &amp; Terapia Capilar">
+                          Cronograma &amp; Terapia Capilar
+                        </option>
+                        <option value="Corte Visagista Moderno">
+                          Corte Visagista Moderno
+                        </option>
+                        <option value="Outro Procedimento / Avaliação">
+                          Outro Procedimento / Avaliação
+                        </option>
+                      </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <label
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        for="preferred-time"
+                        >Período Preferido</label
+                      >
+                      <select
+                        class="w-full px-4 py-3.5 rounded-xl bg-surface-container text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 font-body-md text-body-md transition-all"
+                        id="preferred-time"
+                      >
+                        <option value="Manhã (09h - 12h)">
+                          Manhã (09h - 12h)
+                        </option>
+                        <option value="Tarde (13h - 17h)">
+                          Tarde (13h - 17h)
+                        </option>
+                        <option value="Final de Tarde (17h - 19h)">
+                          Final de Tarde (17h - 19h)
+                        </option>
+                        <option value="Sábado">
+                          Sábado (Horário flexível)
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                      for="client-notes"
+                      >Observações ou Dúvidas Capilares</label
+                    >
+                    <textarea
+                      class="w-full px-4 py-3.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/40 font-body-md text-body-md transition-all"
+                      id="client-notes"
+                      placeholder="Conte-nos sobre o histórico do seu cabelo (química anterior, coloração, etc.)"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="w-full py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-xl shadow-primary/25 hover:bg-primary-container hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-3"
+                    type="submit"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >send</span
+                    >
+                    <span>Confirmar Agendamento no WhatsApp</span>
+                  </button>
+                  <p class="font-body-sm text-body-sm text-center text-outline">
+                    Você será redirecionada para atendimento direto com nossa
+                    consultora.
+                  </p>
+                </form>
+              </div>
+              <!-- Contact Information Details & Studio Card -->
+              <div class="lg:col-span-5 flex flex-col gap-6">
+                <!-- Reference Visual Card -->
+                <div
+                  class="rounded-3xl overflow-hidden bg-surface-container-lowest shadow-md p-2"
+                >
+                  <img
+                    alt="Lene Studio Beauty Contato e Instalações"
+                    class="w-full h-48 object-cover rounded-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzjWccWztun2QgWtW-sOE8rIB15N56o5eeUjm7axa9d_x0Qu3logDGES99ifc04EUTriRiKT73_FjEBUOT-hUx7NQtCRanROjacWt-HQRCkThkvNjPnqOaef-3yLWDDqR-aJ2ol_2r5uEcozfJcy1ZNQU1zDHr9twct3C5f2QRkruCqv2XWeDes6LmOAiDmgiZe8Y4JQUdWI_1goEF9x-IPaSYp8qxu2FJymRGO3JCxlgzFq09j9_74IvMXKUfbqQf-w"
+                  />
+                </div>
+                <div
+                  class="p-8 rounded-3xl bg-surface-container-lowest shadow-md flex flex-col gap-6"
+                >
+                  <h3 class="font-headline-sm text-headline-sm text-primary">
+                    Informações de Contato
+                  </h3>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[20px]"
+                        >phone_iphone</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        >WhatsApp &amp; Telefone</span
+                      >
+                      <a
+                        class="font-title-md text-title-md text-on-surface hover:text-primary font-bold"
+                        href="tel:11987654321"
+                        >(11) 98765-4321</a
+                      >
+                      <span class="font-body-sm text-body-sm text-outline"
+                        >Atendimento em tempo real</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[20px]"
+                        >location_on</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        >Endereço do Estúdio</span
+                      >
+                      <span
+                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        >Av. das Américas, Edifício Grand Palais, Sala 402</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Barra da Tijuca — Rio de Janeiro, RJ</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[20px]"
+                        >schedule</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold"
+                        >Horários de Funcionamento</span
+                      >
+                      <span class="font-body-sm text-body-sm text-on-surface"
+                        >Segunda a Sexta: 09h às 19h</span
+                      >
+                      <span class="font-body-sm text-body-sm text-on-surface"
+                        >Sábado: 08h às 18h</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-primary font-semibold"
+                        >Domingos: Atendimento exclusivo a Noivas</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="pt-4 border-t-0 flex items-center justify-between"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold"
+                      >Redes do Salão:</span
+                    >
+                    <div class="flex items-center gap-3">
+                      <a
+                        class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all"
+                        href="#"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >photo_camera</span
+                        >
+                      </a>
+                      <a
+                        class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all"
+                        href="#"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >public</span
+                        >
+                      </a>
+                      <a
+                        class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all"
+                        href="#"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >chat</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA BANNER BOTTOM -->
+        <section
+          class="w-full py-16 bg-gradient-to-r from-primary to-primary-container text-on-primary relative overflow-hidden"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8"
+          >
+            <div class="flex flex-col gap-2 text-center md:text-left">
+              <h3 class="font-headline-md text-headline-md font-bold">
+                Pronta para transformar seu visual?
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-primary-container opacity-90 max-w-xl"
+              >
+                Reserve sua data e viva uma experiência relaxante de beleza
+                pensada exclusivamente para valorizar sua essência.
+              </p>
+            </div>
+            <a
+              class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-xl hover:bg-surface-container hover:scale-105 transition-all duration-300 shrink-0"
+              href="#agendamento"
+            >
+              <span class="material-symbols-outlined text-[20px]"
+                >calendar_today</span
+              >
+              <span>Solicitar Consulta VIP</span>
+            </a>
+          </div>
+        </section>
+      </div>
+      <script>
+        function handleBooking() {
+          const name = document.getElementById("client-name").value;
+          const phone = document.getElementById("client-phone").value;
+          const service = document.getElementById("service-select").value;
+          const time = document.getElementById("preferred-time").value;
+          const notes = document.getElementById("client-notes").value;
+
+          const message = `Olá Marlene Dias! Gostaria de agendar um horário no Lene Studio Beauty.%0A%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefone:* ${encodeURIComponent(phone)}%0A*Procedimento:* ${encodeURIComponent(service)}%0A*Período:* ${encodeURIComponent(time)}%0A*Observações:* ${encodeURIComponent(notes)}`;
+
+          window.open(
+            `https://api.whatsapp.com/send?phone=5511987654321&text=${message}`,
+            "_blank",
+          );
+        }
+      </script>
+    </main>
+    <aside class="fixed bottom-6 right-6 z-50">
+      <a
+        class="flex items-center gap-3 px-5 py-3 rounded-full bg-primary text-on-primary shadow-[0_10px_25px_-4px_rgba(138,72,83,0.35)] hover:bg-primary-container transition-transform duration-200 hover:scale-105"
+        data-path="contato-agendamento"
+        href="#"
+        ><span class="material-symbols-outlined text-[22px]">chat</span
+        ><span class="font-label-lg text-label-lg hidden md:inline"
+          >Atendimento VIP WhatsApp</span
+        ></a
+      >
+    </aside>
+    <footer class="w-full bg-surface-container-low text-on-surface">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-12">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <img
+                alt="logo-transparent.png"
+                class="h-8 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1XYMZaX4lUaUoDx9X04kkFomT-a47pD0WdqaobReHq2UEkhrx81zVCMwVTC4yaJ0JzQMBjIv5A1KXR5dK5IqCg0KJc-8j5jCR8Z6lpyDCgsUuG5vRAnXi0VRG22M_6LcHVutE30Tj4V6FS0wGLGT_PsZYwgz-coJySjWno8_jxqyH9VPCsS6KzmouxN2nf2CR_MSU-UzK_7oRfRWEADPoG2Rjl0FlY0ZNFgbYPMH_wK2yMI18THT6fWcGw1FytzFlmNwGM6p5f4bQ"
+              /><span class="font-headline-sm text-headline-sm text-primary"
+                >Lene Studio Beauty</span
+              >
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+            >
+              Ateliê de alta estética e transformação capilar comandado por
+              Marlene Dias. Uma experiência exclusiva dedicada à valorização da
+              sua identidade e beleza autêntica.
+            </p>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container max-w-fit"
+            >
+              <span class="material-symbols-outlined text-tertiary text-[18px]"
+                >verified</span
+              ><span
+                class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"
+                >Selo de Excelência Premium</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="font-title-md text-title-md text-primary"
+              >Navegação Rápida</span
+            >
+            <ul class="flex flex-col gap-2.5">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-outline text-[16px]"
+                  >chevron_right</span
+                ><a
+                  class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+                  data-path="inicio"
+                  href="#"
+                  >Início</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-outline text-[16px]"
+                  >chevron_right</span
+                ><a
+                  class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+                  data-path="servicos"
+                  href="#"
+                  >Serviços Especializados</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-outline text-[16px]"
+                  >chevron_right</span
+                ><a
+                  class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+                  data-path="transformacoes-galeria"
+                  href="#"
+                  >Galeria de Resultados</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-outline text-[16px]"
+                  >chevron_right</span
+                ><a
+                  class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+                  data-path="antes-e-depois"
+                  href="#"
+                  >Casos Antes e Depois</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-outline text-[16px]"
+                  >chevron_right</span
+                ><a
+                  class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+                  data-path="sobre-marlene-dias"
+                  href="#"
+                  >Biografia Marlene Dias</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="font-title-md text-title-md text-primary"
+              >Horários &amp; Conexão</span
+            >
+            <div class="flex flex-col gap-2">
+              <span class="font-label-lg text-label-lg text-on-surface"
+                >Atendimento com Hora Marcada</span
+              >
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Terça a Sábado: 09h às 19h<br />Domingos e Segundas: Fechado
+                para consultorias VIP
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 pt-2">
+              <span class="font-label-lg text-label-lg text-on-surface"
+                >Redes Sociais &amp; Contato</span
+              >
+              <div class="flex items-center gap-3">
+                <a
+                  class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all"
+                  href="#"
+                  ><span class="material-symbols-outlined text-[18px]"
+                    >photo_camera</span
+                  ></a
+                ><a
+                  class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all"
+                  href="#"
+                  ><span class="material-symbols-outlined text-[18px]"
+                    >public</span
+                  ></a
+                ><a
+                  class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all"
+                  href="#"
+                  ><span class="material-symbols-outlined text-[18px]"
+                    >mail</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="font-title-md text-title-md text-primary"
+              >Localização</span
+            >
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Av. das Américas, Edifício Grand Palais, Sala 402<br />Barra da
+              Tijuca — Rio de Janeiro, RJ
+            </p>
+            <div class="flex items-center gap-2 text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]"
+                >location_on</span
+              ><span class="font-body-sm text-body-sm"
+                >Estacionamento privativo com manobrista</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p class="font-body-sm text-body-sm text-outline">
+            © 2025 Lene Studio Beauty. Todos os direitos reservados. Design
+            refinado &amp; curadoria exclusiva.
+          </p>
+          <div class="flex items-center gap-6">
+            <a
+              class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors"
+              href="#"
+              >Privacidade</a
+            ><a
+              class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors"
+              href="#"
+              >Termos de Serviço</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

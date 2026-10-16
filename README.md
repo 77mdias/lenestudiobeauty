@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lene Studio Beauty
 
-## Getting Started
+> Landing page oficial do **Lene Studio Beauty** — ateliê de alta estética capilar de Marlene Dias.
+> **URL de produção:** https://lenestudiobeauty.vercel.app
 
-First, run the development server:
+[![CI](https://github.com/77mdias/lenestudiobeauty/actions/workflows/ci.yml/badge.svg)](https://github.com/77mdias/lenestudiobeauty/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/77mdias/lenestudiobeauty/actions/workflows/codeql.yml/badge.svg)](https://github.com/77mdias/lenestudiobeauty/actions/workflows/codeql.yml)
+
+## Stack
+
+- **Next.js 16** (App Router, React 19) + **TypeScript**
+- **Tailwind CSS 4** com Material Symbols (Google Fonts)
+- **Bun** como gerenciador de pacotes e runtime de scripts
+- Landing page 100% estática — agendamento via WhatsApp (sem backend)
+
+## Segurança
+
+Camadas de proteção aplicadas:
+
+- **CSP estrita** + `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy`, `Permissions-Policy` e HSTS (ver `next.config.ts`)
+- `poweredByHeader: false` — não expõe a versão do framework
+- Otimizador de imagens **sem origens remotas** (evita SSRF/abuso)
+- **Pipeline de CI com gates de segurança** (`.github/workflows/ci.yml`):
+  - `bun audit` — falha o build em qualquer vulnerabilidade **critical**
+  - **Gitleaks** — varre segredos (chaves, tokens) no código e no histórico
+  - **CodeQL** (`.github/workflows/codeql.yml`) — análise estática semanal da GitHub
+  - **Dependabot** — mantém as GitHub Actions atualizadas
+
+## Comandos
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install            # instalar dependências
+bun run dev            # servidor de desenvolvimento (localhost:3000)
+bun run build          # build de produção
+bun run start          # servir o build de produção
+
+bun run lint           # ESLint
+bun run typecheck      # TypeScript (tsc --noEmit)
+bun run test           # testes unitários/componentes (Vitest + Testing Library)
+bun run test:watch     # testes em modo watch
+bun run test:e2e       # testes E2E (Playwright, porta dedicada 3100)
+bun run audit          # auditoria de vulnerabilidades das dependências
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Nota E2E:** o Playwright usa a porta **3100** para não conflitar com um
+> `next dev` rodando na 3000. O comando sobe e derruba o servidor sozinho.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                  # App Router (layout + landing page)
+├── components/UI/        # Seções da landing (Hero, Services, Gallery…)
+├── lib/site.ts           # Configuração central (contato, WhatsApp, navegação)
+└── test/setup.ts         # Setup do Vitest (jest-dom)
+e2e/                      # Testes E2E (Playwright)
+.github/workflows/        # CI (qualidade + E2E + segurança) e CodeQL
+```
 
-## Learn More
+## Deploy (Vercel)
 
-To learn more about Next.js, take a look at the following resources:
+O deploy é feito por **integração Git**: cada push em `main` publica
+automaticamente, e cada PR ganha um preview.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Acesse [vercel.com/new](https://vercel.com/new) e importe o repositório `77mdias/lenestudiobeauty`
+2. **Importante:** nomeie o projeto como `lenestudiobeauty` — é isso que define o domínio `lenestudiobeauty.vercel.app`
+3. Framework preset: **Next.js** (detectado automaticamente), sem variáveis de ambiente necessárias
+4. Deploy — pronto ✅
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Domínio próprio (`lenestudiobeauty.com.br`): Project Settings → Domains, apontando o DNS conforme instruções da Vercel.
