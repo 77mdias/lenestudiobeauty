@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Qualidade — Lint, Types, Unit e Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Instalar dependências (lockfile congelado)
+        run: bun install --frozen-lockfile
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Typecheck
+        run: bun run typecheck
+
+      - name: Testes unitários e de componentes
+        run: bun run test
+
+      - name: Build de produção
+        run: bun run build
+
+  e2e:
+    name: E2E — Playwright (Chromium)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Instalar dependências (lockfile congelado)
+        run: bun install --frozen-lockfile
+
+      - name: Build de produção
+        run: bun run build
+
+      - name: Instalar navegador Playwright
+        run: bunx playwright install --with-deps chromium
+
+      - name: Testes E2E
+        run: bun run test:e2e
+
+      - name: Upload do relatório Playwright (em falha)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+  security:
+    name: Segurança — Dependências e Segredos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (histórico completo p/ gitleaks)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Instalar dependências (lockfile congelado)
+        run: bun install --frozen-lockfile
+
+      # Gate duro: qualquer vulnerabilidade CRITICAL quebra o pipeline.
+      - name: Audit de dependências — gate CRITICAL
+        run: bun audit --audit-level critical
+
+      # Informativo: highs em dependências de dev são visíveis nos logs
+      # sem bloquear o deploy (revisar em bun update periódico).
+      - name: Audit de dependências — relatório HIGH (informativo)
+        run: bun audit --audit-level high
+        continue-on-error: true
+
+      # Varredura de segredos (chaves, tokens, senhas) no histórico inteiro.
+      - name: Gitleaks — varredura de segredos
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
