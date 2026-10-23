@@ -78,8 +78,8 @@ export default function Services() {
   return (
     <section id="servicos" className="relative w-full scroll-mt-20 bg-surface py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center">
-          <span className="mb-2 font-label-sm text-label-sm uppercase tracking-widest text-primary">
+        <div data-aos="fade-up" className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center">
+          <span className="mb-2 font-body-sm text-body-sm font-semibold text-primary">
             Serviços
           </span>
           <h2 className="mb-4 font-headline-lg text-headline-lg-mobile text-on-surface sm:text-headline-lg">
@@ -92,10 +92,12 @@ export default function Services() {
         </div>
 
         <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-8">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <article
               key={service.title}
-              className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-outline-variant/50 bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/30 hover:shadow-xl sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
+              data-aos="fade-up"
+              data-aos-delay={(index % 3) * 100}
+              className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-outline-variant/50 bg-surface-container-lowest transition-colors duration-300 hover:border-primary/30 sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
             >
               {/* Foto com título editorial sobreposto */}
               <div className="relative aspect-[3/4] w-full overflow-hidden">
@@ -104,7 +106,7 @@ export default function Services() {
                   alt={service.imageAlt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
-                  className={`object-cover ${service.position ?? ""} transition-transform duration-500 group-hover:scale-105`}
+                  className={`object-cover ${service.position ?? ""} transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
                 {service.badge && (
@@ -123,7 +125,7 @@ export default function Services() {
               <div className="flex flex-1 flex-col gap-4 p-6">
                 <div className="flex items-center gap-2">
                   <Icon name={service.icon} className="text-[20px] text-primary" />
-                  <span className="font-label-sm text-label-sm uppercase tracking-widest text-tertiary">
+                  <span className="font-body-sm text-body-sm font-semibold text-tertiary">
                     {service.tag}
                   </span>
                   <span className="ml-auto shrink-0 rounded-full bg-surface-container px-2.5 py-1 font-label-sm text-label-sm text-on-surface-variant">
@@ -140,7 +142,7 @@ export default function Services() {
                   className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full border border-primary/30 py-3 font-label-lg text-label-lg text-primary transition-all duration-200 group-hover:border-primary group-hover:bg-primary group-hover:text-on-primary"
                 >
                   <span>Quero Agendar</span>
-                  <Icon name="arrow_forward" className="text-[16px]" />
+                  <Icon name="arrow_forward" className="text-[16px] transition-transform duration-300 group-hover:translate-x-1" />
                 </a>
               </div>
             </article>

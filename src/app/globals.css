@@ -197,3 +197,10 @@ body {
   filter: blur(64px);
   pointer-events: none;
 }
+
+/* Hero: escondido até a timeline GSAP revelar (evita flash antes da hidratação). */
+@media (prefers-reduced-motion: no-preference) {
+  [data-hero] {
+    visibility: hidden;
+  }
+}

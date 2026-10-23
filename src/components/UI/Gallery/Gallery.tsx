@@ -61,9 +61,9 @@ export default function Gallery() {
   return (
     <section id="galeria" className="w-full scroll-mt-20 bg-surface py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div data-aos="fade-up" className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <span className="mb-2 block font-label-sm text-label-sm uppercase tracking-widest text-primary">
+            <span className="mb-2 block font-body-sm text-body-sm font-semibold text-primary">
               Galeria de Clientes
             </span>
             <h2 className="font-headline-lg text-headline-lg-mobile text-on-surface sm:text-headline-lg">
@@ -82,19 +82,21 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-          {galleryImages.map((photo) => (
+          {galleryImages.map((photo, index) => (
             <figure
               key={photo.caption}
-              className="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container shadow-sm"
+              data-aos="zoom-out"
+              data-aos-delay={(index % 4) * 80}
+              className="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container"
             >
               <Image
                 src={photo.image}
                 alt={photo.alt}
                 fill
                 sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                className={`object-cover ${photo.position ?? ""} transition-transform duration-500 group-hover:scale-105`}
+                className={`object-cover ${photo.position ?? ""} transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]`}
               />
-              <figcaption className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-transparent to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <figcaption className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-transparent to-transparent p-4 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
                 <span className="font-label-sm text-label-sm text-white">
                   {photo.caption}
                 </span>

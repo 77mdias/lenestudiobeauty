@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/UI/Header/Header";
 import Footer from "../components/UI/Footer/Footer";
 import FloatingWhatsApp from "../components/UI/FloatingWhatsApp/FloatingWhatsApp";
+import Motion from "../components/UI/Motion/Motion";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -54,6 +55,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${jakarta.variable} bg-surface font-body-md text-on-surface antialiased`}
       >
+        <Motion />
         <Header />
         <main className="w-full bg-surface pt-20">{children}</main>
         <FloatingWhatsApp />

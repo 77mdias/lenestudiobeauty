@@ -52,8 +52,8 @@ export default function Feedback() {
       className="relative w-full scroll-mt-20 bg-surface py-24"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center">
-          <span className="mb-2 font-label-sm text-label-sm uppercase tracking-widest text-primary">
+        <div data-aos="fade-up" className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center">
+          <span className="mb-2 font-body-sm text-body-sm font-semibold text-primary">
             Depoimentos
           </span>
           <h2 className="mb-3 font-headline-lg text-headline-lg-mobile text-on-surface sm:text-headline-lg">
@@ -67,7 +67,7 @@ export default function Feedback() {
 
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
           {/* Convite */}
-          <div className="flex flex-col gap-6 rounded-3xl bg-surface-container-lowest p-8 shadow-md lg:col-span-5">
+          <div className="flex flex-col gap-6 rounded-3xl border border-outline-variant/50 bg-surface-container-lowest p-8 lg:col-span-5" data-aos="fade-up">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
               <Icon name="reviews" className="text-[24px] text-primary" />
             </div>
@@ -98,7 +98,7 @@ export default function Feedback() {
           </div>
 
           {/* Formulário */}
-          <div className="rounded-3xl bg-surface-container-lowest p-8 shadow-md lg:col-span-7 lg:p-10">
+          <div className="rounded-3xl border border-outline-variant/50 bg-surface-container-lowest p-8 lg:col-span-7 lg:p-10" data-aos="fade-up" data-aos-delay="120">
             <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div className="flex flex-col gap-2">
@@ -195,7 +195,7 @@ export default function Feedback() {
 
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-3 rounded-full bg-primary py-4 font-label-lg text-label-lg text-on-primary shadow-xl shadow-primary/25 transition-all duration-300 hover:scale-[1.01] hover:bg-primary-container"
+                className="flex w-full items-center justify-center gap-3 rounded-full bg-primary py-4 font-label-lg text-label-lg text-on-primary shadow-lg shadow-primary/15 transition-colors duration-300 hover:bg-primary-container"
               >
                 <Icon name="send" className="text-[20px]" />
                 <span>Enviar Depoimento pelo WhatsApp</span>

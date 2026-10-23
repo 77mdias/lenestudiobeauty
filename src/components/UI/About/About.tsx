@@ -25,9 +25,9 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
           {/* Visual */}
-          <div className="relative flex justify-center lg:col-span-5">
+          <div data-aos="fade-right" className="relative flex justify-center lg:col-span-5">
             <div className="relative w-full max-w-sm">
-              <div className="overflow-hidden rounded-3xl bg-surface-container p-2 shadow-2xl">
+              <div className="overflow-hidden rounded-3xl bg-surface-container p-2 shadow-xl shadow-primary/10">
                 <div className="relative h-[480px] w-full overflow-hidden rounded-2xl">
                   <Image
                     src="/images/stitch/penteados.jpeg"
@@ -39,7 +39,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 -left-4 flex max-w-xs items-center gap-3 rounded-2xl bg-surface-container-lowest p-4 shadow-xl sm:-left-6">
+              <div className="absolute -bottom-6 -left-4 flex max-w-xs items-center gap-3 rounded-2xl bg-surface-container-lowest p-4 shadow-lg sm:-left-6">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
                   <Icon name="psychology" className="text-[24px] text-primary" />
                 </div>
@@ -56,10 +56,10 @@ export default function About() {
           </div>
 
           {/* Texto */}
-          <div className="flex flex-col gap-6 lg:col-span-7">
+          <div data-aos="fade-left" data-aos-delay="100" className="flex flex-col gap-6 lg:col-span-7">
             <div className="inline-flex max-w-fit items-center gap-2 rounded-full bg-surface-container px-3.5 py-1.5">
               <Icon name="favorite" filled className="text-[18px] text-primary" />
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">
+              <span className="font-body-sm text-body-sm font-semibold text-on-surface">
                 Conheça Marlene Dias
               </span>
             </div>

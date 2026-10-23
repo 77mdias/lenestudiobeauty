@@ -12,8 +12,8 @@ export default function Contact() {
       className="relative w-full scroll-mt-20 bg-surface-container-low py-24"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center">
-          <span className="mb-2 font-label-sm text-label-sm uppercase tracking-widest text-primary">
+        <div data-aos="fade-up" className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center">
+          <span className="mb-2 font-body-sm text-body-sm font-semibold text-primary">
             Agendamento
           </span>
           <h2 className="mb-3 font-headline-lg text-headline-lg-mobile text-on-surface sm:text-headline-lg">
@@ -27,7 +27,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12">
           {/* Chamada direta para o WhatsApp */}
-          <div className="relative flex flex-col items-start justify-center gap-6 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-container p-8 text-on-primary shadow-xl sm:p-10 lg:col-span-7 lg:p-12">
+          <div className="relative flex flex-col items-start justify-center gap-6 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-container p-8 text-on-primary shadow-lg shadow-primary/15 sm:p-10 lg:col-span-7" data-aos="fade-up lg:p-12">
             <div className="ambient-glow -right-16 -top-16 h-64 w-64 bg-on-primary/10" />
             <div className="ambient-glow -bottom-20 left-10 h-56 w-56 bg-secondary-fixed/20" />
 
@@ -73,7 +73,7 @@ export default function Contact() {
           </div>
 
           {/* Informações do estúdio */}
-          <div className="flex flex-col gap-6 rounded-3xl bg-surface-container-lowest p-8 shadow-md lg:col-span-5 lg:p-10">
+          <div className="flex flex-col gap-6 rounded-3xl border border-outline-variant/50 bg-surface-container-lowest p-8 lg:col-span-5 lg:p-10" data-aos="fade-up" data-aos-delay="120">
             <h3 className="font-headline-sm text-headline-sm text-primary">
               Informações de Contato
             </h3>

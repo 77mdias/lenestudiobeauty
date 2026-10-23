@@ -33,11 +33,16 @@ const pillars = [
 
 export default function Stats() {
   return (
-    <section className="relative w-full bg-surface-container-lowest py-10 shadow-sm">
+    <section className="relative w-full border-y border-outline-variant/40 bg-surface-container-lowest py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          {pillars.map((pillar) => (
-            <div key={pillar.title} className="flex items-center gap-4">
+          {pillars.map((pillar, index) => (
+            <div
+              key={pillar.title}
+              data-aos="fade-up"
+              data-aos-delay={index * 80}
+              className="flex items-center gap-4"
+            >
               <div
                 className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${pillar.iconWrap}`}
               >
