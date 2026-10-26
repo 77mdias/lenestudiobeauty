@@ -1,0 +1,411 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Lene Studio Beauty — ir para o início" [ref=f1e4] [cursor=pointer]:
+        - /url: "#inicio"
+        - img "Logo Lene Studio Beauty" [ref=f1e5]
+        - generic [ref=f1e6]:
+          - generic [ref=f1e7]: Lene Studio Beauty
+          - generic [ref=f1e8]: Haute Coiffure & Esthétique
+      - generic [ref=f1e9]:
+        - link "Agendar via WhatsApp" [ref=f1e10] [cursor=pointer]:
+          - /url: "#agendamento"
+          - generic [aria-hidden] [ref=f1e11]: chat
+        - button "Abrir menu" [ref=f1e13]:
+          - generic [aria-hidden] [ref=f1e14]: menu
+  - main [ref=f1e15]:
+    - region [ref=f1e16]:
+      - generic [ref=f1e18]:
+        - generic [ref=f1e19]:
+          - generic [ref=f1e20]:
+            - generic [aria-hidden] [ref=f1e21]: verified
+            - generic [ref=f1e22]: Haute Coiffure & Estética Avançada
+          - heading "Sua melhor versão começa aqui. Realce a beleza e o poder dos seus cabelos." [level=1] [ref=f1e23]
+          - paragraph [ref=f1e24]: Especialista em cortes, penteados, progressivas, luzes e mechas — cuidado personalizado para realçar a beleza natural dos seus cabelos.
+          - generic [ref=f1e25]:
+            - link "Agendar Horário no WhatsApp" [ref=f1e26] [cursor=pointer]:
+              - /url: "#agendamento"
+              - generic [aria-hidden] [ref=f1e27]: chat
+            - link "Conhecer Nossos Serviços" [ref=f1e29] [cursor=pointer]:
+              - /url: "#servicos"
+              - generic [aria-hidden] [ref=f1e31]: arrow_forward
+          - generic [ref=f1e32]:
+            - generic [ref=f1e33]:
+              - generic [ref=f1e34]: 15+
+              - generic [ref=f1e35]: Anos de Maestria Capilar
+            - generic [ref=f1e36]:
+              - generic [ref=f1e37]: 3.5k+
+              - generic [ref=f1e38]: Cabelos Transformados
+            - generic [ref=f1e39]:
+              - generic [ref=f1e40]: 5.0 ★
+              - generic [ref=f1e41]: Avaliações das Clientes
+        - generic [ref=f1e43]:
+          - img "Penteado com ondas em cabelo longo — trabalho da Marlene Dias" [ref=f1e47]
+          - generic [ref=f1e48]:
+            - generic [aria-hidden] [ref=f1e50]: workspace_premium
+            - generic [ref=f1e51]: +15 anos de excelência
+    - generic [ref=f1e54]:
+      - generic [ref=f1e55]:
+        - generic [aria-hidden] [ref=f1e57]: auto_awesome
+        - generic [ref=f1e58]:
+          - generic [ref=f1e59]: +3.500 Cabelos
+          - text: Transformações com saúde capilar
+      - generic [ref=f1e60]:
+        - generic [aria-hidden] [ref=f1e62]: diamond
+        - generic [ref=f1e63]:
+          - generic [ref=f1e64]: 100% Premium
+          - text: Cosméticos nobres & bioativos
+      - generic [ref=f1e65]:
+        - generic [aria-hidden] [ref=f1e67]: schedule
+        - generic [ref=f1e68]:
+          - generic [ref=f1e69]: Atendimento VIP
+          - text: Privacidade & pontualidade total
+      - generic [ref=f1e70]:
+        - generic [aria-hidden] [ref=f1e72]: face_retouching_natural
+        - generic [ref=f1e73]:
+          - generic [ref=f1e74]: Visagismo Real
+          - text: Harmonia com seu estilo e tom
+    - generic [ref=f1e76]:
+      - generic [ref=f1e77]:
+        - generic [ref=f1e78]: Serviços
+        - heading "Especialidades da Marlene" [level=2] [ref=f1e79]
+        - paragraph [ref=f1e80]: Cortes, penteados, progressivas, luzes e mechas — cada atendimento é adaptado ao seu cabelo, sempre respeitando a saúde dos fios.
+      - generic [ref=f1e81]:
+        - article [ref=f1e82]:
+          - generic [ref=f1e83]:
+            - img "Corte curto personalizado feito no estúdio" [ref=f1e84]
+            - heading "Cortes" [level=3] [ref=f1e86]
+          - generic [ref=f1e87]:
+            - generic [ref=f1e88]:
+              - generic [aria-hidden] [ref=f1e89]: content_cut
+              - generic [ref=f1e90]: Visagismo
+              - generic [ref=f1e91]: 1h
+            - paragraph [ref=f1e92]: Cortes personalizados que valorizam o formato do seu rosto, o seu estilo e a rotina do dia a dia.
+            - link "Quero Agendar" [ref=f1e93] [cursor=pointer]:
+              - /url: "#agendamento"
+              - generic [aria-hidden] [ref=f1e95]: arrow_forward
+        - article [ref=f1e96]:
+          - generic [ref=f1e97]:
+            - img "Penteado com ondas em cabelo loiro" [ref=f1e98]
+            - generic [ref=f1e100]: Noivas & Madrinhas
+            - heading "Penteados" [level=3] [ref=f1e101]
+          - generic [ref=f1e102]:
+            - generic [ref=f1e103]:
+              - generic [aria-hidden] [ref=f1e104]: diamond
+              - generic [ref=f1e105]: Eventos
+              - generic [ref=f1e106]: 1h - 2h
+            - paragraph [ref=f1e107]: Penteados para noivas, madrinhas, formandas e festas, com acabamento delicado e fixação que dura a noite toda.
+            - link "Quero Agendar" [ref=f1e108] [cursor=pointer]:
+              - /url: "#agendamento"
+              - generic [aria-hidden] [ref=f1e110]: arrow_forward
+        - article [ref=f1e111]:
+          - generic [ref=f1e112]:
+            - img "Cabelo liso e alinhado após progressiva" [ref=f1e113]
+            - heading "Progressivas" [level=3] [ref=f1e115]
+          - generic [ref=f1e116]:
+            - generic [ref=f1e117]:
+              - generic [aria-hidden] [ref=f1e118]: spa
+              - generic [ref=f1e119]: Liso duradouro
+              - generic [ref=f1e120]: 2h30 - 3h30
+            - paragraph [ref=f1e121]: Alinhamento dos fios para reduzir o volume e deixar o cabelo liso, solto e com brilho por muito mais tempo.
+            - link "Quero Agendar" [ref=f1e122] [cursor=pointer]:
+              - /url: "#agendamento"
+              - generic [aria-hidden] [ref=f1e124]: arrow_forward
+        - article [ref=f1e125]:
+          - generic [ref=f1e126]:
+            - img "Luzes acobreadas em cabelo ondulado" [ref=f1e127]
+            - heading "Luzes" [level=3] [ref=f1e129]
+          - generic [ref=f1e130]:
+            - generic [ref=f1e131]:
+              - generic [aria-hidden] [ref=f1e132]: wb_sunny
+              - generic [ref=f1e133]: Iluminação dos fios
+              - generic [ref=f1e134]: 3h - 4h
+            - paragraph [ref=f1e135]: Clareamento distribuído nos fios para um efeito iluminado e natural, do tom suave ao dourado.
+            - link "Quero Agendar" [ref=f1e136] [cursor=pointer]:
+              - /url: "#agendamento"
+              - generic [aria-hidden] [ref=f1e138]: arrow_forward
+        - article [ref=f1e139]:
+          - generic [ref=f1e140]:
+            - img "Mechas em cabelo longo" [ref=f1e141]
+            - generic [ref=f1e143]: Mais procurado
+            - heading "Mechas" [level=3] [ref=f1e144]
+          - generic [ref=f1e145]:
+            - generic [ref=f1e146]:
+              - generic [aria-hidden] [ref=f1e147]: auto_awesome
+              - generic [ref=f1e148]: Sob medida
+              - generic [ref=f1e149]: 3h30 - 4h30
+            - paragraph [ref=f1e150]: Mechas finas ou marcadas, com contraste pensado para iluminar o rosto e dar movimento ao corte.
+            - link "Quero Agendar" [ref=f1e151] [cursor=pointer]:
+              - /url: "#agendamento"
+              - generic [aria-hidden] [ref=f1e153]: arrow_forward
+    - generic [ref=f1e155]:
+      - generic [ref=f1e156]:
+        - generic [ref=f1e157]:
+          - generic [aria-hidden] [ref=f1e158]: compare
+          - generic [ref=f1e159]: Resultados Reais & Comprovados
+        - heading "Antes & Depois no Lene Studio Beauty" [level=2] [ref=f1e160]
+        - paragraph [ref=f1e161]: Trabalho com foto real, sem filtros — a transformação de quem já passou pela cadeira.
+      - generic [ref=f1e162]:
+        - article [ref=f1e163]:
+          - generic [ref=f1e164]:
+            - generic [ref=f1e165]: Progressivas
+            - generic [ref=f1e166]: "Caso #01"
+          - generic [ref=f1e167]:
+            - figure [ref=f1e168]:
+              - img "Antes da progressiva — cabelo com frizz e volume" [ref=f1e169]
+              - generic [ref=f1e170]: Antes
+            - figure [ref=f1e171]:
+              - img "Depois da progressiva — cabelo liso e alinhado" [ref=f1e172]
+              - generic [ref=f1e173]: Depois
+          - generic [ref=f1e174]:
+            - heading "Volume reduzido, liso com movimento" [level=3] [ref=f1e175]
+            - paragraph [ref=f1e176]: Fios com frizz e opacidade transformados em um liso natural, solto e com brilho duradouro.
+        - article [ref=f1e177]:
+          - generic [ref=f1e178]:
+            - generic [ref=f1e179]: Cortes
+            - generic [ref=f1e180]: "Caso #02"
+          - generic [ref=f1e181]:
+            - figure [ref=f1e182]:
+              - img "Antes do corte — cabelo sem formato" [ref=f1e183]
+              - generic [ref=f1e184]: Antes
+            - figure [ref=f1e185]:
+              - img "Depois do corte — bob alinhado" [ref=f1e186]
+              - generic [ref=f1e187]: Depois
+          - generic [ref=f1e188]:
+            - heading "Corte alinhado e finalizado" [level=3] [ref=f1e189]
+            - paragraph [ref=f1e190]: Formato desenhado de acordo com o rosto e o estilo de cada cliente, com finalização que valoriza o movimento natural dos fios.
+    - generic [ref=f1e192]:
+      - generic [ref=f1e193]:
+        - generic [ref=f1e194]:
+          - generic [ref=f1e195]: Galeria de Clientes
+          - heading "Trabalhos Feitos no Estúdio" [level=2] [ref=f1e196]
+        - link "Siga @lenestudiobeauty" [ref=f1e197] [cursor=pointer]:
+          - /url: https://instagram.com
+          - generic [aria-hidden] [ref=f1e198]: photo_camera
+      - generic [ref=f1e200]:
+        - figure "Liso Perfeito" [ref=f1e201]:
+          - img "Cabelo liso e alinhado" [ref=f1e202]
+        - figure "Progressiva" [ref=f1e205]:
+          - img "Progressiva em cabelo longo" [ref=f1e206]
+        - figure "Penteado com Ondas" [ref=f1e209]:
+          - img "Penteado com ondas em cabelo loiro" [ref=f1e210]
+        - figure "Penteado Clássico" [ref=f1e213]:
+          - img "Penteado clássico preso" [ref=f1e214]
+        - figure "Corte & Finalização" [ref=f1e217]:
+          - img "Corte bob alinhado e finalizado" [ref=f1e218]
+        - figure "Liso Alinhado" [ref=f1e221]:
+          - img "Cabelo liso e alinhado após progressiva" [ref=f1e222]
+        - figure "Luzes" [ref=f1e225]:
+          - img "Luzes acobreadas em cabelo ondulado" [ref=f1e226]
+        - figure "Mechas" [ref=f1e229]:
+          - img "Mechas em cabelo longo" [ref=f1e230]
+    - generic [ref=f1e235]:
+      - generic [ref=f1e237]:
+        - img "Marlene Dias, especialista em beleza" [ref=f1e240]
+        - generic [ref=f1e241]:
+          - generic [aria-hidden] [ref=f1e243]: psychology
+          - generic [ref=f1e244]:
+            - generic [ref=f1e245]: Visagismo Aplicado
+            - generic [ref=f1e246]: Estudos e certificações constantes
+      - generic [ref=f1e247]:
+        - generic [ref=f1e248]:
+          - generic [aria-hidden] [ref=f1e249]: favorite
+          - generic [ref=f1e250]: Conheça Marlene Dias
+        - heading "“Amo o que faço. Cuidar de você e transformar sua autoestima é o nosso maior propósito.”" [level=2] [ref=f1e251]
+        - paragraph [ref=f1e252]: Com mais de uma década e meia dedicada à arte da coiffure, Marlene Dias construiu o Lene Studio Beauty como um santuário de bem-estar e sofisticação. Sua abordagem une o rigor técnico de produtos importados de ponta ao carinho de um atendimento humanizado e exclusivo.
+        - paragraph [ref=f1e253]: Aqui, você não é apenas mais um horário em uma agenda lotada. Cada mulher recebe um diagnóstico capilar pormenorizado, avaliação da saúde dos fios e um protocolo personalizado para garantir que o resultado seja deslumbrante e duradouro.
+        - generic [ref=f1e254]:
+          - generic [ref=f1e255]:
+            - generic [aria-hidden] [ref=f1e256]: verified_user
+            - generic [ref=f1e257]:
+              - generic [ref=f1e258]: Produtos Certificados
+              - generic [ref=f1e259]: Fórmulas orgânicas, sem formol e dermatologicamente testadas.
+          - generic [ref=f1e260]:
+            - generic [aria-hidden] [ref=f1e261]: spa
+            - generic [ref=f1e262]:
+              - generic [ref=f1e263]: Experiência Relaxante
+              - generic [ref=f1e264]: Ambiente climatizado, café gourmet e atenção individual.
+    - generic [ref=f1e266]:
+      - generic [ref=f1e267]:
+        - generic [ref=f1e268]: Depoimentos
+        - heading "Sua Experiência Vale Muito" [level=2] [ref=f1e269]
+        - paragraph [ref=f1e270]: Este espaço está sendo construído com as histórias reais de nossas clientes — e ele começa com você.
+      - generic [ref=f1e271]:
+        - generic [ref=f1e272]:
+          - generic [aria-hidden] [ref=f1e274]: reviews
+          - heading "Ainda não há depoimentos por aqui" [level=3] [ref=f1e275]
+          - paragraph [ref=f1e276]: Se você já passou pela cadeira, seja a primeira a compartilhar como foi o seu atendimento. Seu depoimento é enviado pelo WhatsApp e publicado após a aprovação da Marlene.
+          - list [ref=f1e277]:
+            - listitem [ref=f1e278]:
+              - generic [aria-hidden] [ref=f1e279]: check_circle
+              - generic [ref=f1e280]: Leva menos de 1 minuto para enviar
+            - listitem [ref=f1e281]:
+              - generic [aria-hidden] [ref=f1e282]: check_circle
+              - generic [ref=f1e283]: Ajuda outras clientes a se sentirem confiantes
+            - listitem [ref=f1e284]:
+              - generic [aria-hidden] [ref=f1e285]: check_circle
+              - generic [ref=f1e286]: Sua mensagem chega direto com a Marlene no WhatsApp
+        - generic [ref=f1e288]:
+          - generic [ref=f1e289]:
+            - generic [ref=f1e290]:
+              - generic [ref=f1e291]: Seu Nome
+              - textbox "Seu Nome" [ref=f1e292]:
+                - /placeholder: Como você quer ser chamada
+            - generic [ref=f1e293]:
+              - generic [ref=f1e294]: Serviço Realizado
+              - combobox "Serviço Realizado" [ref=f1e295]:
+                - option "Selecione o serviço" [selected]
+                - option "Corte"
+                - option "Penteado"
+                - option "Progressiva"
+                - option "Luzes"
+                - option "Mechas"
+                - option "Outro"
+          - generic [ref=f1e296]:
+            - generic [ref=f1e297]: Sua Nota
+            - generic [ref=f1e298]:
+              - button "Dar 1 estrela" [pressed] [ref=f1e299]:
+                - generic [aria-hidden] [ref=f1e300]: star
+              - button "Dar 2 estrelas" [pressed] [ref=f1e301]:
+                - generic [aria-hidden] [ref=f1e302]: star
+              - button "Dar 3 estrelas" [pressed] [ref=f1e303]:
+                - generic [aria-hidden] [ref=f1e304]: star
+              - button "Dar 4 estrelas" [pressed] [ref=f1e305]:
+                - generic [aria-hidden] [ref=f1e306]: star
+              - button "Dar 5 estrelas" [pressed] [ref=f1e307]:
+                - generic [aria-hidden] [ref=f1e308]: star
+              - generic [ref=f1e309]: 5 de 5
+          - generic [ref=f1e310]:
+            - generic [ref=f1e311]: Seu Depoimento
+            - textbox "Seu Depoimento" [ref=f1e312]:
+              - /placeholder: Conte como foi seu atendimento e como você se sentiu com o resultado
+          - button "Enviar Depoimento pelo WhatsApp" [ref=f1e313]:
+            - generic [aria-hidden] [ref=f1e314]: send
+          - paragraph [ref=f1e316]: Você será redirecionada para o WhatsApp com o depoimento pronto para enviar.
+    - generic [ref=f1e318]:
+      - generic [ref=f1e319]:
+        - generic [ref=f1e320]: Agendamento
+        - heading "Garanta Seu Momento Exclusivo" [level=2] [ref=f1e321]
+        - paragraph [ref=f1e322]: "O agendamento é feito somente pelo WhatsApp: sem formulário, sem espera e com atendimento direto com a Marlene."
+      - generic [ref=f1e323]:
+        - generic [ref=f1e324]:
+          - generic [aria-hidden] [ref=f1e326]: chat
+          - generic [ref=f1e327]:
+            - heading "Agende direto pelo WhatsApp" [level=3] [ref=f1e328]
+            - paragraph [ref=f1e329]: Toque no botão, conte o que deseja fazer com o seu cabelo e escolha o melhor horário. Você fala direto com a Marlene, sem intermediários.
+          - link "Chamar no WhatsApp" [ref=f1e330] [cursor=pointer]:
+            - /url: https://wa.me/5518996348235?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Lene%20Studio%20Beauty.
+            - generic [aria-hidden] [ref=f1e331]: chat
+          - generic [ref=f1e333]:
+            - link "+55 18 99634-8235" [ref=f1e334] [cursor=pointer]:
+              - /url: https://wa.me/5518996348235?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Lene%20Studio%20Beauty.
+              - generic [aria-hidden] [ref=f1e335]: phone_iphone
+              - text: +55 18 99634-8235
+            - generic [ref=f1e336]: Resposta rápida em horário comercial
+        - generic [ref=f1e337]:
+          - heading "Informações de Contato" [level=3] [ref=f1e338]
+          - generic [ref=f1e339]:
+            - generic [aria-hidden] [ref=f1e341]: phone_iphone
+            - generic [ref=f1e342]:
+              - generic [ref=f1e343]: WhatsApp (chat direto)
+              - link "+55 18 99634-8235" [ref=f1e344] [cursor=pointer]:
+                - /url: https://wa.me/5518996348235?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Lene%20Studio%20Beauty.
+              - generic [ref=f1e345]: Toque para abrir a conversa
+          - generic [ref=f1e346]:
+            - generic [aria-hidden] [ref=f1e348]: location_on
+            - generic [ref=f1e349]:
+              - generic [ref=f1e350]: Endereço do Estúdio
+              - generic [ref=f1e351]: Rua Iracema de Almeida Ruiz, 109 - Casa
+              - generic [ref=f1e352]: Bairro Montalvão — Presidente Prudente, SP
+              - link "Como chegar" [ref=f1e353] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=Rua%20Iracema%20de%20Almeida%20Ruiz%2C%20109%20-%20Casa%2C%20Montalv%C3%A3o%2C%20Presidente%20Prudente%20-%20SP
+                - generic [aria-hidden] [ref=f1e354]: map
+                - text: Como chegar
+          - generic [ref=f1e355]:
+            - generic [aria-hidden] [ref=f1e357]: schedule
+            - generic [ref=f1e358]:
+              - generic [ref=f1e359]: Horários de Funcionamento
+              - generic [ref=f1e360]: "Segunda a Sexta: 09h às 19h"
+              - generic [ref=f1e361]: "Sábado: 08h às 18h"
+              - generic [ref=f1e362]: "Domingos: Atendimento exclusivo a Noivas"
+    - generic [ref=f1e364]:
+      - generic [ref=f1e365]:
+        - heading "Pronta para transformar seu visual?" [level=3] [ref=f1e366]
+        - paragraph [ref=f1e367]: Reserve sua data e viva uma experiência relaxante de beleza pensada exclusivamente para valorizar sua essência.
+      - link "Solicitar Consulta VIP" [ref=f1e368] [cursor=pointer]:
+        - /url: "#agendamento"
+        - generic [aria-hidden] [ref=f1e369]: calendar_today
+  - complementary [ref=f1e371]:
+    - link "Atendimento VIP via WhatsApp" [ref=f1e372] [cursor=pointer]:
+      - /url: https://wa.me/5518996348235?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Lene%20Studio%20Beauty.
+      - generic [aria-hidden] [ref=f1e373]: chat
+      - generic [ref=f1e374]: Atendimento VIP WhatsApp
+  - contentinfo [ref=f1e375]:
+    - generic [ref=f1e376]:
+      - generic [ref=f1e377]:
+        - generic [ref=f1e378]:
+          - generic [ref=f1e379]:
+            - img "Logo Lene Studio Beauty" [ref=f1e380]
+            - generic [ref=f1e381]: Lene Studio Beauty
+          - paragraph [ref=f1e382]: Ateliê de alta estética e transformação capilar comandado por Marlene Dias. Uma experiência exclusiva dedicada à valorização da sua identidade e beleza autêntica.
+          - generic [ref=f1e383]:
+            - generic [aria-hidden] [ref=f1e384]: verified
+            - generic [ref=f1e385]: Selo de Excelência Premium
+        - generic [ref=f1e386]:
+          - generic [ref=f1e387]: Navegação Rápida
+          - list [ref=f1e388]:
+            - listitem [ref=f1e389]:
+              - generic [aria-hidden] [ref=f1e390]: chevron_right
+              - link "Início" [ref=f1e391] [cursor=pointer]:
+                - /url: "#inicio"
+            - listitem [ref=f1e392]:
+              - generic [aria-hidden] [ref=f1e393]: chevron_right
+              - link "Serviços Especializados" [ref=f1e394] [cursor=pointer]:
+                - /url: "#servicos"
+            - listitem [ref=f1e395]:
+              - generic [aria-hidden] [ref=f1e396]: chevron_right
+              - link "Galeria de Resultados" [ref=f1e397] [cursor=pointer]:
+                - /url: "#galeria"
+            - listitem [ref=f1e398]:
+              - generic [aria-hidden] [ref=f1e399]: chevron_right
+              - link "Casos Antes e Depois" [ref=f1e400] [cursor=pointer]:
+                - /url: "#antes-e-depois"
+            - listitem [ref=f1e401]:
+              - generic [aria-hidden] [ref=f1e402]: chevron_right
+              - link "Biografia Marlene Dias" [ref=f1e403] [cursor=pointer]:
+                - /url: "#sobre"
+        - generic [ref=f1e404]:
+          - generic [ref=f1e405]: Horários & Conexão
+          - generic [ref=f1e406]:
+            - generic [ref=f1e407]: Atendimento com Hora Marcada
+            - paragraph [ref=f1e408]: "Segunda a Sexta: 09h às 19hSábado: 08h às 18hDomingos: Atendimento exclusivo a Noivas"
+          - generic [ref=f1e409]:
+            - generic [ref=f1e410]: Redes Sociais & Contato
+            - generic [ref=f1e411]:
+              - link "Instagram" [ref=f1e412] [cursor=pointer]:
+                - /url: https://instagram.com
+                - generic [aria-hidden] [ref=f1e413]: photo_camera
+              - link "Site" [ref=f1e414] [cursor=pointer]:
+                - /url: "#"
+                - generic [aria-hidden] [ref=f1e415]: public
+              - link "E-mail" [ref=f1e416] [cursor=pointer]:
+                - /url: mailto:contato@lenestudiobeauty.com.br
+                - generic [aria-hidden] [ref=f1e417]: mail
+        - generic [ref=f1e418]:
+          - generic [ref=f1e419]: Localização
+          - paragraph [ref=f1e420]: Rua Iracema de Almeida Ruiz, 109 - CasaBairro Montalvão — Presidente Prudente, SP
+          - link "Ver rota no Google Maps" [ref=f1e421] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/?api=1&query=Rua%20Iracema%20de%20Almeida%20Ruiz%2C%20109%20-%20Casa%2C%20Montalv%C3%A3o%2C%20Presidente%20Prudente%20-%20SP
+            - generic [aria-hidden] [ref=f1e422]: map
+          - link "Falar no WhatsApp" [ref=f1e424] [cursor=pointer]:
+            - /url: https://wa.me/5518996348235?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Lene%20Studio%20Beauty.
+            - generic [aria-hidden] [ref=f1e425]: chat
+            - text: Falar no WhatsApp
+      - generic [ref=f1e426]:
+        - paragraph [ref=f1e427]: © 2026 Lene Studio Beauty. Todos os direitos reservados. Design refinado & curadoria exclusiva.
+        - generic [ref=f1e428]:
+          - link "Privacidade" [ref=f1e429] [cursor=pointer]:
+            - /url: "#"
+          - link "Termos de Serviço" [ref=f1e430] [cursor=pointer]:
+            - /url: "#"
+  - alert [ref=f1e431]
